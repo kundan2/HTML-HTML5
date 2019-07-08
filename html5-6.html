@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body {margin: 0px;padding: 0px;}
+</style>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500"></canvas>
+	<script>
+		var canvas = document.getElementById('myCanvas');
+		var context = canvas.getContext('2d');
+		var x = canvas.width / 2;
+		var y = canvas.height / 2;
+		var radius = 150;
+		var startAngle = 0 * Math.PI;
+		var endAngle = 2* Math.PI;
+		var counterClockwise = false;
+		context.beginPath();
+        context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+		context.strokeStyle = 'black';
+		context.stroke();
+		
+	    context.beginPath();
+		context.moveTo(155, 175);
+		context.quadraticCurveTo(185, 145, 215,175);
+		context.strokeStyle = 'black';
+		context.stroke();
+		
+		context.beginPath();
+		context.moveTo(290, 175);
+		context.quadraticCurveTo(320, 145, 350,175);
+		context.strokeStyle = 'black';
+		context.stroke();
+		
+		context.beginPath();
+        context.moveTo(245.5, 175);
+        context.bezierCurveTo(245.5, 275, 260, 275, 270, 230);
+        context.strokeStyle = 'black';
+        context.stroke();
+		
+		
+		context.beginPath();
+		context.moveTo(155, 320);
+		context.quadraticCurveTo(245.5, 400, 350,320);
+		context.strokeStyle = 'black';
+		context.stroke();
+		
+		
+		var radius = 25;
+		var startAngle = 0 * Math.PI;
+		var endAngle = 2 * Math.PI;
+		varcounterClockwise = false;
+		context.beginPath();
+		context.arc(185, 200, radius, startAngle, endAngle, counterClockwise);
+		context.strokeStyle = 'black';
+		context.stroke();
+			
+		var radius = 25;
+		var startAngle = 0 * Math.PI;
+		var endAngle = 2 * Math.PI;
+		varcounterClockwise = false;
+		context.beginPath();
+		context.arc(320, 200, radius, startAngle, endAngle, counterClockwise);
+		context.strokeStyle = 'black';
+		context.stroke();
+
+
+		
+</script>
+</body>
+</html>
